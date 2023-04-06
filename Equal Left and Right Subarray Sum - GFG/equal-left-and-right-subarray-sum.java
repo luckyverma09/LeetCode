@@ -22,17 +22,14 @@ class GFG {
 }
 // } Driver Code Ends
 
-
-//User function Template for Java
-
 class Solution{
 	int equalSum(int [] A, int N) {
 		  int leftSum = 0, rightSum = 0;
     for (int i = 0; i < N; i++) {
-        rightSum += A[i];
+        rightSum = rightSum + A[i];
     }
     for (int i = 0; i < N; i++) {
-        rightSum -= A[i];
+        rightSum = rightSum - A[i];
         if (leftSum == rightSum) {
             return i+1;
         }
