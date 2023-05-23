@@ -31,11 +31,26 @@ class Reverse
     // str: input string
     public static String reverseWord(String str)
     {
-        char ch[]=str.toCharArray();  
-        String rev="";  
-        for(int i=ch.length-1;  i>=0;  i--){  
-            rev+=ch[i];  
-        }  
-        return rev; 
+        // char ch[] = str.toCharArray();  
+        // String reversedString="";  
+        // for(int i = ch.length-1;  i>=0;  i--){  
+        //     reversedString += ch[i];  
+        // }  
+        // System.gc();
+        // return reversedString; 
+        
+        
+        
+        
+        char[] ch = str.toCharArray();
+        
+        String revString = "";
+        
+        for(int i= ch.length -1 ; i>=0; i--){
+            revString += ch[i];
+        }
+        
+        System.gc();
+        return revString;
     }
 }
